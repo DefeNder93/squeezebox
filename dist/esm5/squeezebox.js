@@ -6,11 +6,9 @@ var SBItemBody = /** @class */ (function () {
         this.renderer = renderer;
     }
     SBItemBody.prototype.ngAfterViewInit = function () {
-        var _this = this;
         var el = this.bodyEl.nativeElement;
         el.addEventListener('transitionend', function (e) {
             if (el.offsetHeight !== 0) {
-                _this.setHeight('auto');
             }
         }, false);
     };

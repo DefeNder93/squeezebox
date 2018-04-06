@@ -20,7 +20,7 @@ export class SBItemBody {
         el.addEventListener('transitionend', (e:TransitionEvent) => { 
             // check transition ended, so can use regular height if not expanded
             if (el.offsetHeight !== 0) {
-                this.setHeight('auto');
+                // this.setHeight('auto');
             }
         }, false);
     }
